@@ -21,7 +21,6 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <!-- Draw 효과 -->
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="./script/jquery.drawsvg.js"></script>
 
   <!-- 메인 제이쿼리 -->
@@ -39,13 +38,13 @@
         <div class="nav_wrap">
           <ul>
             <li>
-              <a href="#" title="PROFILE"><span>PROFILE</span></a>
+              <a href="#profile" title="PROFILE"><span>PROFILE</span></a>
             </li>
             <li>
-              <a href="#" title="PUBLISHING"><span>PUBLISHING</span></a>
+              <a href="#pub" title="PUBLISHING"><span>PUBLISHING</span></a>
             </li>
             <li>
-              <a href="#" title="UI/UX DESIGN"><span>UI/UX DESIGN</span></a>
+              <a href="#design" title="UI/UX DESIGN"><span>UI/UX DESIGN</span></a>
             </li>
             <li>
               <a href="#" title="WORK/PROCESS"><span>WORK/PROCESS</span></a>
@@ -55,15 +54,22 @@
         <div class="g_bg"></div>
       </nav>
     </header>
-    <div class="intro">
+    <div class="intro wheel">
       <div class="wave_box">
         <div class="wave wave_1"></div>
         <div class="wave wave_2"></div>
         <div class="wave wave_3"></div>
         <div class="title">
           <span>Yun's</span>
-          <br>
-          <span>Portfolio</span>
+          <span>P</span>
+          <span>o</span>
+          <span>r</span>
+          <span>t</span>
+          <span>f</span>
+          <span>o</span>
+          <span>l</span>
+          <span>i</span>
+          <span>o</span>
         </div>
       </div> <!--//End .wave_box-->
       <div class="scroll">
@@ -73,7 +79,7 @@
         </a>
       </div>
       
-      <section id="profile">
+      <section id="profile" class="wheel">
         <h2>Yun's About</h2>
         <div class="a_wrap">
           <div class="pic">
@@ -86,55 +92,189 @@
               <ul class="myself">
                 <li><span class="p01">이름</span> 윤태종</li>
                 <li><span class="p01">나이</span> 27세</li>
-                <li><span class="p01">학력</span> 한국공학대학교 산업디자인공학과</li>
+                <li><span class="p01">학력</span> 한국공학대학교 산업디자인공학과 졸업</li>
                 <li><span class="p01">수료 내역</span> 2023.03.30 ~ 2023.08.23 종로 그린아트컴퓨터 아카데미</li>
                 <li>UX/UI 반응형 웹디자인 웹퍼블리셔[코딩] 개발자3 과정 수료(5개월)</li>
                 <li class="cert">
                   <span class="p01">자격증</span>
-                  <span>GTQ 포토샵 1급,</span>
-                  <span>웹디자인기능사</span>
-                </li>
-              </ul>
-              <hr>
-              <ul>
-                <li>
-                  <p><span>Photoshop</span></p>
-                  <p></p>
-                </li>
-                <li>
-                  <p><span>Illustrator</span></p>
-                </li>
-                <li>
-                  HTML
-                </li>
-                <li>
-                  CSS
-                </li>
-                <li>
-                  Jquery
+                  <span>GTQ 포토샵 1급(23.06),</span>
+                  <span>웹디자인기능사(23.09)</span>
                 </li>
               </ul>
             </div>
-          </div>
+            <div class="ability">
+              <div class="main_a">
+                <h3>Main Skill</h3>
+                <ul>
+                  <li>
+                    <img src="./images/html.svg" alt="html5">
+                  </li>
+                  <li>
+                    <img src="./images/css.svg" alt="css">
+                  </li>
+                  <li>
+                    <img src="./images/js.svg" alt="JavaScript">
+                  </li>
+                  <li>
+                    <img src="./images/jquery.svg" alt="jquery">
+                  </li>
+                  <li>
+                    <img src="./images/illutrator.png" alt="illutrator">
+                  </li>
+                  <li>
+                    <img src="./images/photoshop.png" alt="photoshop">
+                  </li>
+                  <li>
+                    <img src="./images/figma.png" alt="figma">
+                  </li>
+                </ul>
+              </div>
+              <div class="sub_a">
+                <h3>Sub Skill</h3>
+                <ul>
+                  <li>
+                    <img src="./images/nx.png" alt="nx">
+                  </li>
+                  <li>
+                    <img src="./images/KeyShot.png" alt="KeyShot">
+                  </li>
+                  <li>
+                    <img src="./images/cad.png" alt="cad">
+                  </li>
+                </ul>
+              </div>
+            </div> <!--//End .spec-->
+          </div> <!--//End .about-->
         </div>
       </section>
-    </div>
-    
-
+    </div> <!--//End .intro-->
 
     <section id="pub">
-      <div class="pro_1">
-        <h2>홍루이젠 홈페이지 리디자인</h2>
-        <p>반응형 웹페이지 구현</p>
-        <div class="content">
-          <div class="con1"></div>
-          <div class="con2"></div>
+      <div class="pro pro_1 wheel">
+        <div class="desc">
+          <img src="./images/hongruizen_mockup.png" alt="홍루이젠 목업">
+          <div class="desc_m">
+            <div class="subject">
+              <h3>홍루이젠</h3>
+              <p>미디어 쿼리를 이용하여 PC/TABLET/MOBILE에서 보이는 페이지 구축</p>
+            </div>
+            <ul>
+              <li><span class="p02">Type</span>Responsive</li>
+              <li><span class="p02">Page</span>MAIN(PC,TABLET,MOBILE)</li>
+              <li><span class="p02">Tool</span>Figma,Html,CSS,JS</li>
+              <li><span class="p02">Process</span>Swiper JS, Font Awesome</li>
+              <li><span class="p02">Participation</span>개인작업 100%</li>
+            </ul>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
         </div>
+        <div class="pro_bg2 p1"></div>
+        <div class="pro_bg1"></div>
       </div>
-      <div class="pro_2"></div>
-      <div class="pro_3"></div>
-      <div class="pro_4"></div>
-      <div class="pro_5"></div>
+      <div class="pro pro_2 wheel">
+        <div class="desc">
+          <img src="./images/hongruizen_mockup.png" alt="워크홀릭 목업">
+          <div class="desc_m">
+            <div class="subject">
+              <h3>홍루이젠</h3>
+              <p>미디어 쿼리를 이용하여 PC/TABLET/MOBILE에서 보이는 페이지 구축</p>
+            </div>
+            <ul>
+              <li><span class="p02">Type</span>Adaptive</li>
+              <li><span class="p02">Page</span>MAIN(PC,MOBILE)+Sub(Login)</li>
+              <li><span class="p02">Tool</span>Figma,Html,Css,JS</li>
+              <li><span class="p02">Process</span>Font Awesome</li>
+              <li><span class="p02">Participation</span>개인작업 100%</li>
+            </ul>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pro_bg2 p2"></div>
+        <div class="pro_bg1"></div>
+      </div>
+      <div class="pro pro_3 wheel">
+        <div class="desc">
+          <img src="./images/hongruizen_mockup.png" alt="워크홀릭 목업">
+          <div class="desc_m">
+            <div class="subject">
+              <h3>홍루이젠</h3>
+              <p>미디어 쿼리를 이용하여 PC/TABLET/MOBILE에서 보이는 페이지 구축</p>
+            </div>
+            <ul>
+              <li><span class="p02">Type</span>Adaptive</li>
+              <li><span class="p02">Page</span>MAIN(PC,MOBILE)+Sub(Login)</li>
+              <li><span class="p02">Tool</span>Figma,Html,Css,JS</li>
+              <li><span class="p02">Process</span>Font Awesome</li>
+              <li><span class="p02">Participation</span>개인작업 100%</li>
+            </ul>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pro_bg2 p2"></div>
+        <div class="pro_bg1"></div>
+      </div>
+      <div class="pro pro_4 wheel">
+        <div class="desc">
+          <img src="./images/hongruizen_mockup.png" alt="워크홀릭 목업">
+          <div class="desc_m">
+            <div class="subject">
+              <h3>홍루이젠</h3>
+              <p>미디어 쿼리를 이용하여 PC/TABLET/MOBILE에서 보이는 페이지 구축</p>
+            </div>
+            <ul>
+              <li><span class="p02">Type</span>Adaptive</li>
+              <li><span class="p02">Page</span>MAIN(PC,MOBILE)+Sub(Login)</li>
+              <li><span class="p02">Tool</span>Figma,Html,Css,JS</li>
+              <li><span class="p02">Process</span>Font Awesome</li>
+              <li><span class="p02">Participation</span>개인작업 100%</li>
+            </ul>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pro_bg2 p4"></div>
+        <div class="pro_bg1"></div>
+      </div>
+      <div class="pro pro_5 wheel">
+        <div class="desc">
+          <img src="./images/hongruizen_mockup.png" alt="워크홀릭 목업">
+          <div class="desc_m">
+            <div class="subject">
+              <h3>홍루이젠</h3>
+              <p>미디어 쿼리를 이용하여 PC/TABLET/MOBILE에서 보이는 페이지 구축</p>
+            </div>
+            <ul>
+              <li><span class="p02">Type</span>Adaptive</li>
+              <li><span class="p02">Page</span>MAIN(PC,MOBILE)+Sub(Login)</li>
+              <li><span class="p02">Tool</span>Figma,Html,Css,JS</li>
+              <li><span class="p02">Process</span>Font Awesome</li>
+              <li><span class="p02">Participation</span>개인작업 100%</li>
+            </ul>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pro_bg2 p5"></div>
+        <div class="pro_bg1"></div>
+      </div>
     </section>
 
     <section id="design">
