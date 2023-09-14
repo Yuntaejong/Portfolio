@@ -300,6 +300,7 @@
   width: 50px; height: 50px;
   border-radius: 50%;
   transition: .8s;
+  opacity: .8;
 }
 #pub div:nth-child(2n-1) .pro_bg2 {left: 30%;}
 #pub div:nth-child(2n) .pro_bg2 {right: 30%;}
@@ -319,8 +320,8 @@
   transform: translateY(-50%);
   z-index: 1;
 }
-#pub div:nth-child(2n) .desc .desc_m {left: 25%;}
-#pub div:nth-child(2n-1) .desc .desc_m {right:25%;}
+#pub div:nth-child(2n) .desc .desc_m {left: 23%;}
+#pub div:nth-child(2n-1) .desc .desc_m {right:23%;}
 #pub .pro .desc .desc_m .subject {
   border-bottom: .5px solid #333;
   padding-bottom: 15px;
@@ -380,7 +381,7 @@
   opacity: 1;
 }
 #pub .pro .desc .desc_m ul:last-of-type a::before{
-  content:'Click me';
+  content:'Click me!';
   display:block;
   position: relative;
   top: 0; left: 0;
@@ -399,14 +400,8 @@
 
 
 /* pro_bg2 배경 색상 */
-.p1 {
-  background:radial-gradient(544.22% 97.12% at 18.62% 31.23%, #d0483e 0%, #EFC150 100%);
-  opacity: .7;
-}
-.p2 {
-  background: radial-gradient(544.22% 97.12% at 18.62% 31.23%, #86CEE0 0%, #9DB75A 100%);
-  opacity: .7;
-}
-.p3 {}
-.p4 {}
-.p5 {}
+.p1 {background:radial-gradient(544.22% 97.12% at 18.62% 31.23%, #d0483e 0%, #EFC150 100%);}
+.p2 {background:radial-gradient(544.22% 97.12% at 18.62% 31.23%, #86CEE0 0%, #9DB75A 100%);}
+.p3 {background:radial-gradient(544.22% 97.12% at 18.62% 31.23%, #ff4343 0%, #FFC371 100%);}
+.p4 {background: radial-gradient(544.22% 97.12% at 18.62% 31.23%, #5B86E5 0%, #36D1DC 100%);}
+.p5 {background: radial-gradient(544.22% 97.12% at 18.62% 31.23%, #000 0%, #434343 100%);}

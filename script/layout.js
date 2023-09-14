@@ -137,6 +137,63 @@ $(document).ready(function(){
                 'height':'50px',
             });
         }
+        if(sPos>=3980 && sPos<4250){
+            $('#pub .pro_3 .pro_bg1').css({
+                'width':'3000px',
+                'height':'400px'
+            });
+            $('#pub .pro_3 .pro_bg2').css({
+                'width':'1500px',
+                'height':'1500px',
+            });
+        } else {
+            $('#pub .pro_3 .pro_bg1').css({
+                'width':'1600px',
+                'height':'600px'
+            });
+            $('#pub .pro_3 .pro_bg2').css({
+                'width':'50px',
+                'height':'50px',
+            });
+        }
+        if(sPos>=5030 && sPos<5300){
+            $('#pub .pro_4 .pro_bg1').css({
+                'width':'3000px',
+                'height':'400px'
+            });
+            $('#pub .pro_4 .pro_bg2').css({
+                'width':'1500px',
+                'height':'1500px',
+            });
+        } else {
+            $('#pub .pro_4 .pro_bg1').css({
+                'width':'1600px',
+                'height':'600px'
+            });
+            $('#pub .pro_4 .pro_bg2').css({
+                'width':'50px',
+                'height':'50px',
+            });
+        }
+        if(sPos>=6080 && sPos<6350){
+            $('#pub .pro_5 .pro_bg1').css({
+                'width':'3000px',
+                'height':'400px'
+            });
+            $('#pub .pro_5 .pro_bg2').css({
+                'width':'1500px',
+                'height':'1500px',
+            });
+        } else {
+            $('#pub .pro_5 .pro_bg1').css({
+                'width':'1600px',
+                'height':'600px'
+            });
+            $('#pub .pro_5 .pro_bg2').css({
+                'width':'50px',
+                'height':'50px',
+            });
+        }
     });
 
 
