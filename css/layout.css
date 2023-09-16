@@ -405,3 +405,100 @@
 .p3 {background:radial-gradient(544.22% 97.12% at 18.62% 31.23%, #ff4343 0%, #FFC371 100%);}
 .p4 {background: radial-gradient(544.22% 97.12% at 18.62% 31.23%, #5B86E5 0%, #36D1DC 100%);}
 .p5 {background: radial-gradient(544.22% 97.12% at 18.62% 31.23%, #000 0%, #434343 100%);}
+
+
+/* aside contact */
+.contact {
+  position: fixed;
+  right: 0; bottom: 50px;
+  z-index: 8;
+  transform: rotate(-90deg) translate(20px, 505px);
+  transition: .5s;
+  display:none;
+}
+aside.rotate {
+  transform:rotate(0) translate(0,0);
+}
+.contact h2 {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  color:#fff;
+  width: 200px;
+  padding:10px;
+  border-radius: 15px 15px 0 0;
+  background: radial-gradient(232.09% 83.67% at 71.05% 63.88%, #748BDD 0%, #CDD3EA 92.37%);
+}
+.contact h2::after {
+  content:'';
+  display:block;
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  border:2px solid #fff;
+  border-bottom: none;
+  background: transparent;
+  border-radius: 15px 15px 0 0;
+  width: 90%; height: 80%;
+}
+.contact fieldset {
+  width: 600px;
+  height: 450px;
+  border: 5px double #eee;
+  background: url(../images/form_bg.jpg) no-repeat;
+  background-size: cover;
+  padding:20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px rgba(0,0,0,.6);
+  border-radius: 0 20px 0 20px;
+}
+.contact fieldset p {
+  margin-bottom: 20px;
+}
+.contact fieldset p:nth-of-type(1) {
+  margin-top:30px;
+}
+.contact fieldset p textarea {
+  width: 500px; height: 100px;
+}
+.contact fieldset p:nth-of-type(1) input, .contact fieldset p:nth-of-type(2) input {
+  display:inline-block;
+  height: 20px;
+  margin-top:5px;
+}
+.contact fieldset p:last-of-type input {
+  width: 150px;
+  padding:10px 0;
+  border-radius: 4px;
+  background: #eee;
+  color:#333;
+  border:1px solid transparent;
+  margin-right: 20px;
+  font-family: 'Noto Sans KR',sans-serif;
+  transition: .3s;
+}
+.contact fieldset p:last-of-type input:hover {
+  background: #748BDD;
+  color:#fff;
+  border:1px solid #fff;
+  box-sizing: border-box;
+}
+input::placeholder, textarea::placeholder {
+  font-style: italic;
+  font-size: 14px;
+  font-family: 'Noto Sans KR',sans-serif;
+}
+input:focus, textarea:focus {box-shadow: 0 0 5px #748BDD inset;}
+.contact fieldset legend {display:none;}
+
+#design {
+  width: 100%; height: 100vh;
+  background: #eee;
+}
+#design .design_wrap {
+  width: 1600px;
+  height: 100%;
+  margin:0 auto;
+}

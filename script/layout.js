@@ -93,9 +93,9 @@ $(document).ready(function(){
 
         //토글 스크롤 이벤트
         if(sPos>=800) {
-            $('.toggle').show();
+            $('.toggle, .contact').fadeIn();
         } else {
-            $('.toggle').hide();
+            $('.toggle, .contact').fadeOut();
         }
 
         // pub 배경 변화
@@ -137,7 +137,7 @@ $(document).ready(function(){
                 'height':'50px',
             });
         }
-        if(sPos>=3980 && sPos<4250){
+        if(sPos>=4080 && sPos<4350){
             $('#pub .pro_3 .pro_bg1').css({
                 'width':'3000px',
                 'height':'400px'
@@ -156,7 +156,7 @@ $(document).ready(function(){
                 'height':'50px',
             });
         }
-        if(sPos>=5030 && sPos<5300){
+        if(sPos>=5180 && sPos<5450){
             $('#pub .pro_4 .pro_bg1').css({
                 'width':'3000px',
                 'height':'400px'
@@ -175,7 +175,7 @@ $(document).ready(function(){
                 'height':'50px',
             });
         }
-        if(sPos>=6080 && sPos<6350){
+        if(sPos>=6280 && sPos<6550){
             $('#pub .pro_5 .pro_bg1').css({
                 'width':'3000px',
                 'height':'400px'
@@ -195,8 +195,6 @@ $(document).ready(function(){
             });
         }
     });
-
-
 
     // profile span hover 
     $('.point2').mouseenter(function(){
@@ -241,4 +239,9 @@ $(document).ready(function(){
         });
     });
 
+    // aside contact
+    $('.contact h2').click(function(){
+        // $(this).css({'transform':'rotate(0) translate(0,0)'});
+        $('.contact').toggleClass('rotate');
+    });
 });
