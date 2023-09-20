@@ -135,15 +135,6 @@
   width: 100%; height: 100vh;
   position: relative;
 }
-
-#profile h2 {
-  font-size: 32px;
-  color:#333;
-  letter-spacing: 12px;
-  font-family: 'Nanum Gothic',sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
 #profile .a_wrap {
   width: 1600px;
   position: absolute;
@@ -276,6 +267,148 @@
   height: 40px;
   margin-bottom: 40px;
 }
+/* tap */
+#tab {
+  width: 100%; height: 100vh;
+  position: relative;
+}
+#tab > ul {
+  display: flex;
+  justify-content: center;
+  width: 1600px; height: 740px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding-top:30px;
+  box-sizing: border-box;
+  gap:60px;
+  box-shadow: 0 0 5px rgba(0,0,0,.6);
+  border-radius: 10px;
+  background: #fff;
+}
+#tab > ul > li::after {
+  content:'';
+  display:block;
+  height: 200px; width: 1px;
+  background: rgba(0,0,0,.2);
+  position: absolute;
+  top: 0;
+  transform:translate(-30px,30px);
+}
+#tab > ul > li:first-child::after{display:none;}
+
+#tab > ul > li > a{
+  display:block;
+  width: 250px; height: 156px;
+  text-align: center;
+  font-size: 22px;
+  color:#748BDD;;
+  position: relative;
+  transform: translateY(33px);
+  line-height: 156px;
+  transition: .3s;
+  background: #fff;
+}
+#tab > ul > li > a.active {
+  transform: translateY(70px) scale(1.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,.6);
+  background:#748BDD ;
+  color:#fff;
+  font-weight: bold;
+  z-index: 10;
+  border-radius: 15px;
+}
+  
+#tab > ul > li > a img {width: 100px;}
+#tab > ul > li .concept_wrap {
+  width: 90%; height: 400px;
+  position: absolute;
+  left: 50%; top: 60%;
+  transform: translate(-50%,-50%);
+  padding:10px 50px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.2);
+  background: #fff;
+  display:none;
+  z-index: 9;
+}
+#tab > ul > li:first-child .concept_wrap {display:block;}
+#tab > ul > li > .concept_wrap > ul {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; height: 400px;
+  margin:auto 0;
+}
+#tab > ul > li .concept_wrap > ul > li:first-child img {
+  width: 300px;
+  float:left;
+  clear:both;
+  margin-top:20px;
+  display:block;
+}
+#tab > ul > li:nth-child(4) .concept_wrap > ul > li:first-child > img {
+  width: 300px; height: 50px;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept {
+  width: 600px;
+  display:flex;
+  flex-wrap:wrap;
+  align-content: center;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div {
+  width: 300px; height: 150px;
+  margin:auto;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding:10px 0;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div > ul {
+  display:flex;
+  justify-content: center;
+  gap:15px;
+  align-items: center;
+  height: 60px;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div > ul > li p {
+  font-size: 14px;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div:first-child {
+  float:left;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div:first-child > ul > li p > span {
+  display:inline-block;
+  width: 20px; height: 35px;
+  border-radius: 20px;
+  transform-origin: 50% 50%;
+  transform: rotate(-45deg);
+}
+.color01 {background: #CE403D;}
+.color02 {background: #3B2120;}
+.color03 {background: #DF8F9B;}
+.color04 {background: #86CEE0;}
+.color05 {background: #9DB75A;}
+.color06 {background: #E29D70;}
+.color07 {background: #FF384A;}
+.color08 {background: #FFC371;}
+.color09 {background: #5B86E5;}
+.color10 {background: #002c5f;}
+.color11 {background: #007FA8;}
+.color12 {background: #000000;}
+.color13 {background: #FFFFFF; border:1px solid #333;}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div:nth-child(2) {
+  float:right;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div:last-child {
+  width: 600px;
+}
+#tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div:last-child p {
+  line-height: 20px;
+}
+
 /* pub */
 #pub {width: 100%; height: auto;}
 
@@ -283,7 +416,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .pro_bg1 {
   position: absolute;
