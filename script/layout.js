@@ -249,10 +249,109 @@ $(document).ready(function(){
             'left':'290px'
         });
     });
+    // design img effect 
+    let img01=$('#design > .design_wrap > ul > li:first-child > a > img');
+    let img02=$('#design > .design_wrap > ul > li:nth-child(2) > a > img');
+    let img03=$('#design > .design_wrap > ul > li:nth-child(3) > a > img');
+    let img04=$('#design > .design_wrap > ul > li:nth-child(4) > a > img');
+    let img05=$('#design > .design_wrap > ul > li:last-child > a > img');
+    let n =0;
+
+    function img_fadeInOut(){
+        img01.stop().fadeOut();
+        img02.stop().fadeOut();
+        img03.stop().fadeOut();
+        img04.stop().fadeOut();
+        img05.stop().fadeOut();
+        if(n==1) {
+            n=0;
+        } else {
+            n++;
+        }
+        img01.eq(n).stop().fadeIn();
+        img02.eq(n).stop().fadeIn();
+        img03.eq(n).stop().fadeIn();
+        img04.eq(n).stop().fadeIn();
+        img05.eq(n).stop().fadeIn();
+    };
+
+    let Timer = setInterval(img_fadeInOut,2000);
+
+    // design popup 
+
+    let total = 2;
+    let i = 1;
+    const num = document.getElementById('page');
+    const r_btn = document.getElementById('r_btn');
+    const l_btn = document.getElementById('l_btn');
+    const logo = document.getElementById('logo');
+    const pattern = document.getElementById('pattern');
+    const uiux = document.getElementById('uiux');
+    const poster = document.getElementById('poster');
+    const banner = document.getElementById('banner');
+
+    num.innerHTML=i+'/'+total;
+    r_btn.addEventListener('click',function(){
+        if(i==2){
+            i=1;
+        } else {
+            i++;
+        }
+        num.innerHTML=i+'/'+total;
+        logo.src=`./images/logo_design${i}.jpg`;
+        pattern.src=`./images/pattern_design${i}.jpg`;
+        uiux.src=`./images/uiux_design${i}.jpg`;
+        poster.src=`./images/poster_design${i}.jpg`;
+        banner.src=`./images/banner_design${i}.jpg`;
+    });
+    l_btn.addEventListener('click',function(){
+        if(i==1){
+            i=2;
+        } else {
+            i--;
+        }
+        num.innerHTML=i+'/'+total;
+        logo.src=`./images/logo_design${i}.jpg`;
+        pattern.src=`./images/pattern_design${i}.jpg`;
+        uiux.src=`./images/uiux_design${i}.jpg`;
+        poster.src=`./images/poster_design${i}.jpg`;
+        banner.src=`./images/banner_design${i}.jpg`;
+    });
+    // a.logo 클릭
+    $('.logo').click(function(){
+        n=1;
+        num.innerHTML=i+'/'+total;
+        $('.logo_popup, .inter').fadeIn();
+        return false;
+    });
+    // a.pattern 클릭
+    $('.pattern').click(function(){
+        $('.pattern_popup, .inter').fadeIn();
+        return false;
+    });
+    // a.uiux 클릭
+    $('.uiux').click(function(){
+        $('.uiux_popup, .inter').fadeIn();
+        return false;
+    });
+    // a.poster 클릭
+    $('.poster').click(function(){
+        $('.poster_popup, .inter').fadeIn();
+        return false;
+    });
+    // a.banner 클릭
+    $('.banner').click(function(){
+        $('.banner_popup, .inter').fadeIn();
+        return false;
+    });
+    //popup 닫기
+    $('.fa-xmark').click(function(){
+        $('.popup, .inter').fadeOut();
+    });
+
 
     // aside contact
     $('.contact h2').click(function(){
-        // $(this).css({'transform':'rotate(0) translate(0,0)'});
         $('.contact').toggleClass('rotate');
     });
 });
