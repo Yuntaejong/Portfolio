@@ -14,7 +14,7 @@ $(document).ready(function(){
         </svg>
     </div>
     `
-    // $('body').append(loading);
+    $('body').append(loading);
 
     var $svg = $('.loading svg').drawsvg();
     $('.intro').css({'opacity':'0'},300);
