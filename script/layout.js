@@ -23,31 +23,31 @@ $(document).ready(function(){
     $('.intro').delay(4100).css({'opacity':'1'},300);
     
     // 일정 스크롤 이동
-    //     var $html =$('html');
-    //     var page = 1;
-    //     var lastPage = $('.wheel').length;
-    //     console.log(lastPage);
+        var $html =$('html');
+        var page = 1;
+        var lastPage = $('.wheel').length;
+        console.log(lastPage);
 
-    //     $html.animate({scrollTop:0},10);
+        $html.animate({scrollTop:0},10);
 
-    //     window.addEventListener('wheel',function(e){
-    //         e.preventDefault();
-    //     },{passive:false});
+        window.addEventListener('wheel',function(e){
+            e.preventDefault();
+        },{passive:false});
 
-    //     $(window).on('wheel',function(e){
+        $(window).on('wheel',function(e){
     
 
-    //     if($html.is(":animated")) return;
-    //     if(e.originalEvent.deltaY >0){
-    //     if(page== lastPage) return;
-    //     page++;
-    //     } else if (e.originalEvent.deltaY < 0){
-    //     if(page==1) return;
-    //     page--;
-    //     }
-    //     var posTop = (page-1)*$(window).height();
-    //     $html.animate({scrollTop:posTop});
-    // });
+        if($html.is(":animated")) return;
+        if(e.originalEvent.deltaY >0){
+        if(page== lastPage) return;
+        page++;
+        } else if (e.originalEvent.deltaY < 0){
+        if(page==1) return;
+        page--;
+        }
+        var posTop = (page-1)*$(window).height();
+        $html.animate({scrollTop:posTop});
+    });
 
 
     
@@ -208,30 +208,9 @@ $(document).ready(function(){
     });
 
     // profile span hover 
-    $('.point2').mouseenter(function(){
-        $('#profile .a_wrap .pic img').css({
-            'transform':'scale(1.2)',
-            'filter':'grayscale(0)'
-        });
-        $('#profile .a_wrap .pic span').css({
-            'top':'60px',
-            'left':'320px'
-        });
-    });
-    $('.point2').mouseleave(function(){
-        $('#profile .a_wrap .pic img').css({
-            'transform':'scale(1)',
-            'filter':'grayscale(1)'
-        });
-        $('#profile .a_wrap .pic span').css({
-            'top':'85px',
-            'left':'290px'
-        });
-    });
-    // about hover 
+    // point1
     $('.point1').mouseenter(function(){
-        $('.pic img').attr('src','./images/profile_2.gif').css({
-            'filter':'grayscale(0)',
+        $('.pic img').attr('src','./images/profile2.gif').css({
             'transform':'scale(1.2)'
         });
         $('#profile .a_wrap .pic span').css({
@@ -240,8 +219,7 @@ $(document).ready(function(){
         });
     });
     $('.point1').mouseleave(function(){
-        $('.pic img').attr('src','./images/profile.jpg').css({
-            'filter':'grayscale(1)',
+        $('.pic img').attr('src','./images/introduce_mbti.jpg').css({
             'transform':'scale(1)'
         });
         $('#profile .a_wrap .pic span').css({
@@ -249,6 +227,26 @@ $(document).ready(function(){
             'left':'290px'
         });
     });
+    // point2
+    $('.point2').mouseenter(function(){
+        $('.pic img').attr('src','./images/profile1.jpg').css({
+            'transform':'scale(1.2)'
+        });
+        $('#profile .a_wrap .pic span').css({
+            'top':'60px',
+            'left':'320px'
+        });
+    });
+    $('.point2').mouseleave(function(){
+        $('.pic img').attr('src','./images/introduce_mbti.jpg').css({
+            'transform':'scale(1)'
+        });
+        $('#profile .a_wrap .pic span').css({
+            'top':'85px',
+            'left':'290px'
+        });
+    });
+    
     // design img effect 
     let img01=$('#design > .design_wrap > ul > li:first-child > a > img');
     let img02=$('#design > .design_wrap > ul > li:nth-child(2) > a > img');
@@ -349,9 +347,13 @@ $(document).ready(function(){
         $('.popup, .inter').fadeOut();
     });
 
-
     // aside contact
     $('.contact h2').click(function(){
         $('.contact').toggleClass('rotate');
     });
+
+    $('#pub .pro .desc .desc_m ul:last-of-type li:first-child a, #pub .pro .desc .desc_m ul:last-of-type li:nth-child(2) a').click(function(){
+        swal("공사중!","불편을 드려 죄송합니다","error");
+        return false;
+    })
 });

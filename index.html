@@ -25,6 +25,9 @@
 
   <!-- 메인 제이쿼리 -->
   <script src="./script/layout.js"></script>
+
+  <!-- alert 라이브러리 -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -80,18 +83,19 @@
         <h2>Yun's About</h2>
         <div class="a_wrap">
           <div class="pic">
-            <img src="./images/profile.jpg" alt="사진">
+            <img src="./images/introduce_mbti.jpg" alt="사진">
             <span>1997.08.21</span>
           </div>
           <div class="about">
-            <p>'<span class="point1">집요함</span>'을 가진 웹퍼블리셔 '<span class="point2">윤태종</span>' 입니다</p>
+            <p>철저하게 '<span class="point1">계획</span>'하고 성실하게 이행하는 웹퍼블리셔 '<span class="point2">윤태종</span>' 입니다</p>
             <div class="spec">
               <ul class="myself">
                 <li><span class="p01">이름</span> 윤태종</li>
                 <li><span class="p01">나이</span> 27세</li>
                 <li><span class="p01">학력</span> 한국공학대학교 산업디자인공학과 졸업</li>
-                <li><span class="p01">수료 내역</span> 2023.03.30 ~ 2023.08.23 종로 그린아트컴퓨터 아카데미</li>
-                <li>UX/UI 반응형 웹디자인 웹퍼블리셔[코딩] 개발자3 과정 수료(5개월)</li>
+                <li><span class="p01">수료 내역</span> UX/UI 반응형 웹디자인 웹퍼블리셔[코딩] 개발자3 과정 수료(5개월)</li>
+                <li>피그마(Figma) UI/UX 웹&앱 디자이너를 위한 실무활용</li>
+                <li>디지털역량 제고를 위한 다이나믹 클라이언트 사이드 스크립트 기초</li>
                 <li class="cert">
                   <span class="p01">자격증</span>
                   <span>GTQ 포토샵 1급(23.06),</span>
@@ -192,6 +196,7 @@
                 </div>
               </li>
             </ul>
+            <a href="#pro1" title="홍루이젠 바로가기"></a>
           </div>
         </li>
         <li>
@@ -239,6 +244,7 @@
                 </div>
               </li>
             </ul>
+            <a href="#pro2" title="워크홀릭 바로가기"></a>
           </div>
         </li>
         <li>
@@ -281,6 +287,7 @@
                 </div>
               </li>
             </ul>
+            <a href="#pro3" title="하림펫푸드 바로가기"></a>
           </div>
         </li>
         <li>
@@ -326,10 +333,11 @@
                 </div>
               </li>
             </ul>
+            <a href="#pro4" title="캐스퍼 바로가기"></a>
           </div>
         </li>
         <li>
-          <a href="#" title="딩고" >딩고(Dingo)</a>
+          <a href="#" title="딩고">딩고(Dingo)</a>
           <div class="concept_wrap">
             <ul>
               <li>
@@ -368,12 +376,13 @@
                 </div>
               </li>
             </ul>
+            <a href="#pro5" title="딩고 바로가기"></a>
           </div>
         </li>
       </ul>
     </section>
     <section id="pub">
-      <div class="pro pro_1 wheel">
+      <div class="pro pro_1 wheel" id="pro1">
         <div class="desc">
           <img src="./images/hongruizen_mockup.png" alt="홍루이젠 목업">
           <div class="desc_m">
@@ -398,7 +407,7 @@
         <div class="pro_bg2 p1"></div>
         <div class="pro_bg1"></div>
       </div>
-      <div class="pro pro_2 wheel">
+      <div class="pro pro_2 wheel" id="pro2">
         <div class="desc">
           <img src="./images/walkholic_mockup.png" alt="워크홀릭 목업">
           <div class="desc_m">
@@ -423,7 +432,7 @@
         <div class="pro_bg2 p2"></div>
         <div class="pro_bg1"></div>
       </div>
-      <div class="pro pro_3 wheel">
+      <div class="pro pro_3 wheel" id="pro3">
         <div class="desc">
           <img src="./images/harim_mockup.png" alt="하림펫푸드 목업">
           <div class="desc_m">
@@ -448,7 +457,7 @@
         <div class="pro_bg2 p3"></div>
         <div class="pro_bg1"></div>
       </div>
-      <div class="pro pro_4 wheel">
+      <div class="pro pro_4 wheel" id="pro4">
         <div class="desc">
           <img src="./images/casper_mockup.png" alt="캐스퍼 목업">
           <div class="desc_m">
@@ -473,7 +482,7 @@
         <div class="pro_bg2 p4"></div>
         <div class="pro_bg1"></div>
       </div>
-      <div class="pro pro_5 wheel">
+      <div class="pro pro_5 wheel" id="pro5">
         <div class="desc">
           <img src="./images/dingo_mockup.png" alt="딩고 목업">
           <div class="desc_m">
