@@ -14,13 +14,53 @@ $(document).ready(function(){
         </svg>
     </div>
     `
-    $('body').append(loading);
+
+    // 모달창
+    const modal=`
+    <div class="modal">
+        <div class="inner">
+            <a href="#" title="팝업">
+                <img src="./images/popup.jpg" alt="">
+            </a>
+            <p>
+                <input type="checkbox" id="ch">
+                <label for="ch">오늘 하루 열지 않음</label>
+                <input type="button" value="닫기" id="c_btn">  
+            </p>
+        </div>
+    </div>
+    `;
+
+    // 모달,로딩 변수를 body의 맨 뒤쪽에 출력한다.
+    $('body').append(loading,modal);
+
+    //쿠키생성하기
+  let ch = $('.modal #ch');  //체크박스 변수
+
+  //현재 브라우저에 쿠키정보가 있는지 없는지 유무를 판단하여 모달이 나오지 않게함.
+    if($.cookie('popup')=='none'){
+        $('.modal').hide();
+    }
+  //쿠키의 존재 유무를 체크하여 쿠키를 생성하거나 모달윈도 숨기기
+    function closeModal(){
+        if(ch.is(':checked')){ //만약에 체크박스에 체크가 된 경우라면
+  //쿠키를 생성하기
+        $.cookie('popup', 'none', {expires:1, path:'/'});
+        }
+        //체크박스에 체크 안한 경우 그냥 모달 숨기기
+        $('.modal').hide();
+    }
+
+    //닫기 버튼을 클릭하면 closeModal함수 실행하여 쿠키생성하고 모달 숨기기 한다.
+    $('.modal #c_btn').click(function(){
+        closeModal();
+    });
 
     var $svg = $('.loading svg').drawsvg();
-    $('.intro').css({'opacity':'0'},300);
+    $('.intro, .modal').css({'opacity':'0'},300);
     $svg.drawsvg('animate').delay(3000).fadeOut();
     $('.loading').delay(4000).fadeOut();
-    $('.intro').delay(4100).css({'opacity':'1'},300);
+    $('.intro, .modal').delay(4100).css({'opacity':'1'},300);
     
     // 일정 스크롤 이동
         var $html =$('html');

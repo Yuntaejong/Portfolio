@@ -147,12 +147,14 @@
 }
 #profile .a_wrap .pic {
   position: relative;
+  text-align: center;
 }
 #profile .a_wrap .pic img {
   width: 400px;
   border-radius: 20px;
   box-shadow: 0 0 5px rgba(0,0,0,.6);
   transition: .5s;
+  display:block;
 }
 #profile .a_wrap .pic span {
   position: absolute;
@@ -163,6 +165,53 @@
   letter-spacing: 6px;
   transition: .5s;
 }
+#profile .a_wrap .pic a {
+  position: relative;
+  bottom: -20px;
+  display:inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+#profile .a_wrap .pic a:hover::after {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+#profile .a_wrap .pic a:hover::before {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+#profile .a_wrap .pic a::after {
+  content: 'click me';
+  display:block;
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 120px;
+  padding:10px 0;
+  border-radius: 20px;
+  transition: 0.5s;
+  transform: translateY(0) rotateX(0);
+  border:1px solid #333;
+  background:#fff;
+  color: #333;
+  opacity: 1;
+}
+#profile .a_wrap .pic a::before{
+  content:'Click me!';
+  display:block;
+  position: relative;
+  top: 0; left: 0;
+  width: 120px;
+  padding:10px 0;
+  border-radius: 20px;
+  transition: 0.5s;
+  transform: translateY(-50%) rotateX(90deg);
+  background: #333;
+  color: #fff;
+  opacity: 0;
+}
+#profile .a_wrap .pic a::after {content:'이력서 보기';} 
+
 #profile .a_wrap .about {
   width: 48%;
   display:flex;
@@ -423,52 +472,6 @@
 }
 #tab > ul > li > .concept_wrap > ul > li:last-child > .concept > div:last-child p {
   line-height: 20px;
-}
-
-#tab > ul > li > .concept_wrap > a {
-  position: relative;
-  display:inline-block;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  bottom: 60px;
-}
-#tab > ul > li > .concept_wrap > a:hover::after {
-  opacity: 0;
-  transform: translateY(50%) rotateX(90deg);
-}
-#tab > ul > li > .concept_wrap > a:hover::before {
-  opacity: 1;
-  transform: translateY(0) rotateX(0);
-}
-#tab > ul > li > .concept_wrap > a::after {
-  content: '바로가기';
-  display:block;
-  position: absolute;
-  top: 0; left: 0;
-  width: 120px;
-  padding:10px 0;
-  border-radius: 20px;
-  transition: 0.5s;
-  transform: translateY(0) rotateX(0);
-  border:1px solid #333;
-  background:#fff;
-  color: #333;
-  opacity: 1;
-}
-#tab > ul > li > .concept_wrap > a::before{
-  content:'Click me!';
-  display:block;
-  position: relative;
-  top: 0; left: 0;
-  width: 120px;
-  padding:10px 0;
-  border-radius: 20px;
-  transition: 0.5s;
-  transform: translateY(-50%) rotateX(90deg);
-  background: #333;
-  color: #fff;
-  opacity: 0;
 }
 /* pub */
 #pub {width: 100%; height: auto;}
