@@ -57,10 +57,10 @@ $(document).ready(function(){
     });
 
     var $svg = $('.loading svg').drawsvg();
-    $('.intro, .modal').css({'opacity':'0'},300);
+    $('.intro, .modal').animate({'opacity':'0'},300);
     $svg.drawsvg('animate').delay(3000).fadeOut();
     $('.loading').delay(4000).fadeOut();
-    $('.intro, .modal').delay(4100).css({'opacity':'1'},300);
+    $('.intro, .modal').delay(4100).animate({'opacity':'1'},300);
     
     // 일정 스크롤 이동
         var $html =$('html');
