@@ -591,8 +591,14 @@
   color: #fff;
   opacity: 0;
 }
-#pub .pro .desc .desc_m ul:last-of-type li:first-child a::after {content:'StyleGuide';} 
-#pub .pro .desc .desc_m ul:last-of-type li:nth-child(2) a::after {content:'Prototype';} 
+#pub .pro .desc .desc_m ul:last-of-type li:first-child a::after {content:'기획서';} 
+#pub .pro .desc .desc_m ul:last-of-type li:nth-child(2) a::after {
+  content:'StyleGuide & Prototype';
+  width: 200px;
+}
+#pub .pro .desc .desc_m ul:last-of-type li:nth-child(2) a::before {
+  width: 200px;
+} 
 #pub .pro .desc .desc_m ul:last-of-type li:last-child a::after{content:'Website';}
 
 /* pro_bg2 배경 색상 */

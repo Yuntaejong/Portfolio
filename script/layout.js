@@ -392,7 +392,7 @@ $(document).ready(function(){
         $('.contact').toggleClass('rotate');
     });
 
-    $('#pub .pro .desc .desc_m ul:last-of-type li:first-child a, #pub .pro .desc .desc_m ul:last-of-type li:nth-child(2) a').click(function(){
+    $('#pub .pro .desc .desc_m ul:last-of-type li:first-child a,#pub .pro .desc .desc_m ul:last-of-type li:nth-child(2) a').not('#pub #pro1 .desc .desc_m ul:last-of-type li:first-child a,#pub #pro1 .desc .desc_m ul:last-of-type li:nth-child(2) a').click(function(){
         swal("공사중!","불편을 드려 죄송합니다","error");
         return false;
     })
