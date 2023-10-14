@@ -267,6 +267,12 @@
   transform: translateX(-50%);
   animation: arrow 1s infinite;
 }
+.point1:hover::before {
+  display:none;
+}
+.point2:hover::before {
+  display:none;
+}
 @keyframes arrow {
   0% {top: -20px;}
   100% {top: -10px;}
